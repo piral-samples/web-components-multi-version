@@ -1,0 +1,8 @@
+{
+    "name": "lib-v2",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "lit": "^2.3.1"
+    }
+}

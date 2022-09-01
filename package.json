@@ -1,0 +1,23 @@
+{
+  "name": "web-components-multi-version",
+  "description": "An illustrative example how web components may be properly distributed to allow multiple versions in one application.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npx pilet debug 'packages/mf-*'",
+    "start-shell": "yarn workspace app-shell run start",
+    "build-shell": "npx piral build packages/app-shell --type release",
+    "build-pilets": "npx pilet build 'packages/mf-*' --type manifest",
+    "build": "yarn build-shell && yarn build-pilets && mv dist/pilets.json dist/release/ && mv dist/mf-* dist/release/",
+    "postinstall": "yarn workspace app-shell run declaration"
+  },
+  "keywords": ["monorepo", "webcomponents", "versioning", "microfrontends"],
+  "devDependencies": {
+    "piral-cli": "0.14.30",
+    "piral-cli-esbuild": "0.14.30",
+    "typescript": "4.8.2"
+  },
+  "license": "MIT"
+}
