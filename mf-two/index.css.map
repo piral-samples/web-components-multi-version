@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/style.css"],
+  "sourcesContent": ["new-lib-button:nth-child(2) {\n  color: red;\n}\n"],
+  "mappings": "AAAA,4BACE",
+  "names": []
+}

@@ -1,0 +1,1 @@
+[{"name":"mf-one","version":"1.0.0","link":"/mf-one/index.js","spec":"v2","requireRef":"esbuildpr_mfone","dependencies":{}},{"name":"mf-two","version":"1.0.0","link":"/mf-two/index.js","spec":"v2","requireRef":"esbuildpr_mftwo","dependencies":{}}]
